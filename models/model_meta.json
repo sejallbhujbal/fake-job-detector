@@ -1,0 +1,44 @@
+{
+  "best": "tfidf_logreg",
+  "models": {
+    "tfidf_logreg": {
+      "file": "tfidf_logreg.joblib",
+      "threshold": 0.4079594342724342,
+      "hybrid_threshold": 0.4830761637440213,
+      "val_f2_hybrid": 0.8166969147005445,
+      "val_pr_auc_hybrid": 0.8844614672677127,
+      "fit_seconds": 5.2
+    },
+    "tfidf_logreg_smote": {
+      "file": "tfidf_logreg_smote.joblib",
+      "threshold": 0.35522877356642996,
+      "hybrid_threshold": 0.42292975234195473,
+      "val_f2_hybrid": 0.8108108108108109,
+      "val_pr_auc_hybrid": 0.8865692404377665,
+      "fit_seconds": 5.8
+    },
+    "tfidf_meta_xgb": {
+      "file": "tfidf_meta_xgb.joblib",
+      "threshold": 0.16161496937274933,
+      "hybrid_threshold": 0.6037613892555237,
+      "val_f2_hybrid": 0.7538167938931297,
+      "val_pr_auc_hybrid": 0.8381361645328015,
+      "fit_seconds": 43.9
+    },
+    "tfidf_meta_xgb_smote": {
+      "file": "tfidf_meta_xgb_smote.joblib",
+      "threshold": 0.1445087045431137,
+      "hybrid_threshold": 0.3739222721755504,
+      "val_f2_hybrid": 0.743879472693032,
+      "val_pr_auc_hybrid": 0.8210816851946646,
+      "fit_seconds": 74.5
+    }
+  },
+  "rule_weight": 0.7,
+  "seed": 42,
+  "quick": false,
+  "n_train": 11246,
+  "n_val": 2410,
+  "n_test": 2410,
+  "trained_at": "2026-11-18T09:24:13+00:00"
+}

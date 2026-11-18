@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Scam Detector</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; width: 380px; margin: 0; padding: 12px; color: #111827; }
+    h1 { font-size: 16px; margin: 0 0 8px; }
+    textarea { width: 100%; box-sizing: border-box; height: 120px; font-size: 12px; padding: 6px; border: 1px solid #d1d5db; border-radius: 6px; }
+    input { width: 100%; box-sizing: border-box; font-size: 12px; padding: 4px 6px; border: 1px solid #d1d5db; border-radius: 6px; }
+    .row { display: flex; gap: 6px; margin-top: 6px; }
+    button { margin-top: 8px; width: 100%; padding: 8px; background: #1d4ed8; color: white; border: 0; border-radius: 6px; font-weight: 600; cursor: pointer; }
+    button:disabled { background: #93c5fd; cursor: wait; }
+    #result { margin-top: 10px; }
+    .score { font-size: 22px; font-weight: 700; text-align: center; padding: 8px; border-radius: 8px; color: white; }
+    .low { background: #16a34a; } .medium { background: #ca8a04; } .high { background: #dc2626; }
+    .bar { height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; margin: 6px 0; }
+    .bar > div { height: 100%; }
+    ul { padding-left: 0; list-style: none; margin: 6px 0; font-size: 12px; }
+    li { margin: 3px 0; }
+    .ev { color: #6b7280; font-style: italic; }
+    .warn { background: #fef3c7; padding: 6px; border-radius: 6px; font-size: 12px; margin-top: 6px; }
+    .error { background: #fee2e2; padding: 6px; border-radius: 6px; font-size: 12px; }
+    details { font-size: 11px; margin-top: 8px; color: #4b5563; }
+    .muted { font-size: 11px; color: #6b7280; }
+    mark { background: #fecaca; padding: 0 2px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>🛡️ Job Scam Detector</h1>
+  <textarea id="text" placeholder="Select a job post on the page and open this popup, or paste it here…"></textarea>
+  <div class="row">
+    <input id="company" placeholder="Company (optional)" />
+    <input id="email" placeholder="E-mail (optional)" />
+  </div>
+  <button id="check">Check post</button>
+  <div id="result"></div>
+  <details>
+    <summary>Settings</summary>
+    <label class="muted" for="apiUrl">API URL</label>
+    <input id="apiUrl" placeholder="http://localhost:8000" />
+    <div class="muted">After deploying the API Space, use https://&lt;user&gt;-&lt;space&gt;.hf.space</div>
+  </details>
+  <script src="popup.js"></script>
+</body>
+</html>

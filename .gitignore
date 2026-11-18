@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+
+# data (download EMSCAD yourself)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# large model artefacts (track with git-lfs if you deploy them)
+models/distilbert_checkpoints/
+
+.agents/
+.claude/
+.DS_Store

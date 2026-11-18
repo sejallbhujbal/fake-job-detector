@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Job Scam Detector",
+  "version": "1.0.0",
+  "description": "Select a job or internship post on LinkedIn, Internshala or any site and check it for scam red flags.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Check selected job post"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "contextMenus"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*",
+    "https://*.hf.space/*"
+  ]
+}

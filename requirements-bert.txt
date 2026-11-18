@@ -1,0 +1,6 @@
+# Optional: only needed to train/run DistilBERT.
+# On Google Colab torch is pre-installed. For a CPU-only laptop:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.1
+transformers>=4.40
+accelerate>=0.30
